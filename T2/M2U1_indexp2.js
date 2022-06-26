@@ -1,8 +1,7 @@
 function calcular_Mm(){
 	
 	stado=true
-
-    var numero1 = document.getElementById("numero1").value;
+    	var numero1 = document.getElementById("numero1").value;
 	var numero2 = document.getElementById("numero2").value;
 	var numero3 = document.getElementById("numero3").value;
 	var numero4 = document.getElementById("numero4").value;
@@ -16,7 +15,6 @@ function calcular_Mm(){
 	if (numero == '') {
   	alert("hay celdas vacias");
 	stado=false
-	break;
 	} else {
   	console.log("No es null");
 	}
@@ -32,7 +30,6 @@ function calcular_Mm(){
 		}// if
 
 	} //fin for 1
-	if(stado==false) break;
 	} //fin for 2
 
 	var mayor= entrada[0];
@@ -50,7 +47,7 @@ function calcular_Mm(){
 
 	}
 
-	//else{ alert ("ingrese 4 numeros diferentes entre si y/\u00F3 no deje celdas vacia")	}
+	else{ alert ("ingrese 4 numeros diferentes entre si y/\u00F3 no deje celdas vacia")	}
 
 }
 

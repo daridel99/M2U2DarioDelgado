@@ -1,7 +1,11 @@
 function crear(){
 
 	var col = 2 //document.getElementById("cols").value;
+	var nomb= document.getElementById("cols").value;
 	var filas = document.getElementById("rows").value;
+	if (nomb == '') {
+		alert("ingrese el nombre");}
+	 else{
 	var tabla="<table border=\"1\">";
 
 tabla+="<tr>";
@@ -20,6 +24,7 @@ tabla+="</table>";
 document.getElementById("resultado").innerHTML=tabla;
 
 }
+}
 function crear2(){
 
 document.getElementById("p1").innerHTML=""
@@ -32,7 +37,9 @@ function crear3(){
 var nombreE = document.getElementById("cols").value;
 var Nmaterias = document.getElementById("rows").value;
 let datos=[];
-
+if (nombreE == '') {
+	alert("ingrese el nombre");}
+ else{
 let variable=document.getElementsByTagName("td");
 for(i=4;i<(4+Nmaterias*2);i++){
 datos.push(variable[i].children[0].value);
@@ -63,4 +70,4 @@ if((i+2)<(Nmaterias*2)){Vmaterias+=', ';}
 
   	p1.appendChild(newtext);
 
-}
+}}
